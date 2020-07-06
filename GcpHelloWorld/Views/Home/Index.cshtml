@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <form asp-action="Index" method="get">
+        <div class="form-actions no-color">
+            <p>
+                Find by IP: <input type="text" name="SearchString" value="@ViewData["CurrentFilter"]" />
+                <br/>
+                Results : <input type="text" name="resultString" value="@ViewData["Results"]" />
+                <input type="submit" value="Search"  />                 
+            </p>
+        </div>
+    </form>
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
